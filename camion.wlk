@@ -52,9 +52,10 @@ object elCamion {
 		if (camino.puedeRecorrer()) {
 			destino.depositar(cargo)
 			cargo = []
+			return "Transporte exitoso."
 		}
 		else {
-			throw "No se puede transportar."
+			return "No se puede transportar."
 		}
 	}
 }
